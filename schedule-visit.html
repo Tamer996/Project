@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule Your Visit - Ethiopian Historical Sites</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="hamburger" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <h1 class="big">Schedule Your visit</h1>
+        </div>
+    </header>
+
+    
+     <div>
+        <nav id="sidebar" class="sidebar">
+            <span class="closebtn" onclick="toggleMenu()">&times;</span>
+            <a href="index.html">Home</a>
+            <a href="sites.html">Historical Sites</a>
+            <a href="visitor-info.html">Visitor Information</a>
+            <a href="about.html">About Us</a>
+            <a href="schedule-visit.html">Schedule Your Visit</a>
+           
+        </nav>
+        
+     </div>
+    <main>
+        <section class="schedule">
+            <h2>Plan Your Visit</h2>
+            <form action="submit_schedule.php" method="post">
+                <label for="name" >Your Name</label>
+                <input type="text" id="name" name="name" required><br>
+                <label for="date">Visit Date</label>
+                <input type="date" id="date" name="date" required><br>
+                <label for="site">Choose a Site</label>
+                <select id="site" name="site" required>
+                    <option value="lalibela">Lalibela</option>
+                    <option value="axum">Axum Obelisks</option>
+                    <option value="fasil-ghebbi">Fasil Ghebbi</option>
+                    <option value="fasil-ghebbi">Sof Umar</option>
+                    <option value="fasil-ghebbi">Lake Tana</option>
+                    <option value="fasil-ghebbi">Harar Jugol</option>
+                    <option value="fasil-ghebbi">Semien Mountains</option>
+                    <option value="fasil-ghebbi">Bale mountains</option>
+                    <option value="fasil-ghebbi">Tiya Megaliths</option>
+                    <option value="fasil-ghebbi">Konso Landscape</option>
+            
+                </select><br>
+                <button type="submit" class="button">Submit Schedule</button>
+            </form>
+        </section>
+    </main>
+    <br><br>
+    <footer>
+        <p>&copy; 2025 Ethiopian Heritage. All rights reserved.</p>
+    </footer>
+    <script src="javascripts.js"></script>
+</body>
+</html>
